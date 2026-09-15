@@ -7,8 +7,6 @@ hides one character; find it and the page says so.
 Plain HTML, CSS and JavaScript. No framework, no build step, no dependency:
 open the file and click.
 
-> The user interface is in French, as is the code vocabulary. This README and
-> the repository metadata are in English.
 
 ## Screenshots
 
