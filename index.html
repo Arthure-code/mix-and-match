@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Assemble une tête, un corps et des jambes en cliquant sur chaque image, et retrouve le personnage mystère.">
+    <link rel="icon" href="data:,">
     <title>Personnage mystère</title>
     <link rel="stylesheet" href="styles/main.css" >
     <script defer src="js/main.js"></script>
@@ -15,17 +17,17 @@
         <h2>Trouver le personnage mystère</h2>
         <ul class="visionneuse">
             <li>
-                <img id="imageHaut" src="images/haut0.jpg">
+                <button type="button"><img id="imageHaut" src="images/haut0.jpg" width="100" height="100" alt="Tête, passer à la suivante"></button>
             </li>
             <li>
-                <img id="imageMilieu" src="images/milieu0.jpg">
+                <button type="button"><img id="imageMilieu" src="images/milieu0.jpg" width="100" height="100" alt="Corps, passer au suivant"></button>
             </li>
             <li>
-                <img id="imageBas" src="images/bas0.jpg">
+                <button type="button"><img id="imageBas" src="images/bas0.jpg" width="100" height="100" alt="Jambes, passer aux suivantes"></button>
             </li>
         </ul>
 
-        <section id="reussite" class="cacher">
+        <section id="reussite" class="cacher" aria-live="polite">
             <p>Bravo! Tu as réussi à trouver le personnage mystère!</p>
         </section>
     </main>

@@ -48,6 +48,16 @@ button:hover {
     font-weight: bolder;
 }
 
+/* Chaque image est le contenu d'un bouton, pour le clavier et le focus. Le
+   bouton ne doit rien ajouter autour d'elle, ni marge intérieure ni fond ;
+   pour le reste il se comporte comme l'image en ligne qu'il remplace, et la
+   page reste au pixel près celle d'avant. */
+.visionneuse button {
+    padding: 0;
+    background: none;
+}
 
-
-
+.visionneuse button:focus-visible {
+    outline: 3px solid rgb(32, 133, 32);
+    outline-offset: 2px;
+}
