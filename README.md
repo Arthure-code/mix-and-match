@@ -7,7 +7,6 @@ hides one character; find it and the page says so.
 Plain HTML, CSS and JavaScript. No framework, no build step, no dependency:
 open the file and click.
 
-
 ## Screenshots
 
 ![A light grey page titled Personnage mystère. Under the heading Trouver le personnage mystère, three pictures stacked in a column, each framed in green: a pirate's head with a black hat and an eye patch, a green double-breasted jacket with a yellow glove, and black breeches with yellow trim and pink tassels. Below, in large green letters, Bravo! Tu as réussi à trouver le personnage mystère!](preview.png)
@@ -59,7 +58,7 @@ nombre de variantes et le personnage mystère sont des constantes en tête du
 script. À chaque clic, la sélection est comparée au personnage : si les trois
 parties correspondent, les cadres verts et le message apparaissent, et ils
 disparaissent dès qu'on s'en éloigne. Les boutons donnent le clavier sans
-une ligne de code. Interface et vocabulaire du code en français.
+une ligne de code.
 
 ## Licence
 
