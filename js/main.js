@@ -12,18 +12,20 @@ const refImages = {
     bas: document.getElementById('imageBas'),
 };
 
+// L'écouteur est sur le bouton qui entoure l'image : le clic, Entrée et
+// Espace passent tous par lui, sans rien coder pour le clavier.
 for (const refImage of Object.values(refImages)) {
-    refImage.addEventListener('click', changerImage);
+    refImage.parentElement.addEventListener('click', changerImage);
 }
 
 /**
 * Passer à la variante suivante de l'image cliquée, puis vérifier le
 * personnage. Une seule fonction pour les trois images : e.currentTarget
-* est l'image qui porte l'écouteur, et son nom de fichier dit tout.
+* est le bouton qui porte l'écouteur, son image dit où on en est.
 * @param {Event} e - L'événement de clic
 */
 function changerImage(e) {
-    const refImage = e.currentTarget;
+    const refImage = e.currentTarget.querySelector('img');
     const { partie, index } = lirePartieEtIndex(refImage);
 
     refImage.src = cheminImage(partie, (index + 1) % NB_VARIANTES);
